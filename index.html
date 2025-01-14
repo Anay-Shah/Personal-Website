@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <title>Anay Shah</title>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ef9bff8647.js" crossorigin="anonymous"></script>
+        <script>
+            var i = 0;
+            var txt = 'Undergraduate Computer Science @ TMU';
+            var speed = 60;
+
+            window.onload = function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("info").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+        </script>
+        
+    </head>
+    <body>
+        <div class="banner-text">
+            <h2>Anay Shah</h2>
+            <h3 id="info"></h3>
+            <div class="about-me">
+                <p>I'm a passionate software developer with a focus on creating elegant solutions to complex problems. Currently exploring the intersection of AI and web development while pursuing my degree at Toronto Metropolitan University.</p>
+            </div>
+            <main class="center-icons">
+                <a class="file" href="./Anay.Shah Resume.pdf" target="_blank"><i style="color: white" class="far fa-file fa-2x"></i></a>
+                <a class="github"href="https://github.com/Anay-Shah" target="_blank"><i style="color: white" class="fab fa-github fa-2x"></i></a>
+                <a class="envelope"href="mailto:anay.shah@torontomu.ca" target="_blank"><i style="color: white" class="far fa-envelope fa-2x"></i></a>
+                <a class="linkedin"href="https://www.linkedin.com/in/anaycshah/" target="_blank"><i style="color: white" class="fab fa-linkedin-in fa-2x"></i></a>
+            </main>
+        </div>
+        <div class="animation-area">
+            <ul class="box-area">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </body>
+</html>
