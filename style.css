@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'Baloo 2', cursive;
-    overflow-y: hidden;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     height: 100%;
     width: 100%;
@@ -518,38 +518,25 @@ body {
     left: 0;
 }
 
-/* Rest of your animations and box-area styles remain the same */
-
-/* Media Queries */
 @media (max-width: 768px) {
-    .center-icons {
-        padding: 0 20px;
-		
+    .animation-area {
+        height: auto; /* Adjust background area for content overflow */
     }
-    .about-me p {
-		color: white;
-		font-size: 15px;
-		line-height: 1.6;
-		font-family: 'Baloo 2', cursive;
-	}
-    .about-me {
-        padding: 20px;
-        margin: 10px;
-    }
-}
 
-@media (max-height: 600px) {
-    .banner-text h2 {
-        margin-top: 5vh;
-    }
-    .about-me p {
-		color: white;
-		font-size: 15px;
-		line-height: 1.6;
-		font-family: 'Baloo 2', cursive;
-	}
     .center-icons {
-        height: auto;
-        margin-top: 20px;
+        gap: 10px; /* Reduce gaps between icons */
+    }
+
+    .center-icons a {
+        height: 80px; /* Adjust icon size for smaller screens */
+        width: 80px;
+    }
+
+    .banner-text h2 {
+        font-size: 40px; /* Scale down heading */
+    }
+
+    .banner-text h3 {
+        font-size: 16px;
     }
 }
