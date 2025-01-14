@@ -2,39 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <title>Anay Shah</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ef9bff8647.js" crossorigin="anonymous"></script>
-        <script>
-            var i = 0;
-            var txt = 'Undergraduate Computer Science @ TMU';
-            var speed = 60;
-
-            window.onload = function typeWriter() {
-                if (i < txt.length) {
-                    document.getElementById("info").innerHTML += txt.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
-                }
-            }
-        </script>
-        
     </head>
     <body>
-        <div class="banner-text">
-            <h2>Anay Shah</h2>
-            <h3 id="info"></h3>
-            <div class="about-me">
-                <p>I'm a passionate software developer with a focus on creating elegant solutions to complex problems. Currently exploring the intersection of AI and web development while pursuing my degree at Toronto Metropolitan University.</p>
+        <div class="banner-text container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2>Anay Shah</h2>
+                    <h3 id="info"></h3>
+                    <div class="about-me">
+                        <p>I'm a passionate software developer with a focus on creating elegant solutions to complex problems. Currently exploring the intersection of AI and web development while pursuing my degree at Toronto Metropolitan University.</p>
+                    </div>
+                    <div class="center-icons">
+                        <a class="file" href="./Anay.Shah Resume.pdf" target="_blank"><i class="far fa-file fa-2x"></i></a>
+                        <a class="github" href="https://github.com/Anay-Shah" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                        <a class="envelope" href="mailto:anay.shah@torontomu.ca" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/anaycshah/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    </div>
+                </div>
             </div>
-            <main class="center-icons">
-                <a class="file" href="./Anay.Shah Resume.pdf" target="_blank"><i style="color: white" class="far fa-file fa-2x"></i></a>
-                <a class="github"href="https://github.com/Anay-Shah" target="_blank"><i style="color: white" class="fab fa-github fa-2x"></i></a>
-                <a class="envelope"href="mailto:anay.shah@torontomu.ca" target="_blank"><i style="color: white" class="far fa-envelope fa-2x"></i></a>
-                <a class="linkedin"href="https://www.linkedin.com/in/anaycshah/" target="_blank"><i style="color: white" class="fab fa-linkedin-in fa-2x"></i></a>
-            </main>
         </div>
         <div class="animation-area">
             <ul class="box-area">
@@ -50,5 +43,20 @@
                 <li></li>
             </ul>
         </div>
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var i = 0;
+            var txt = 'Undergraduate Computer Science @ TMU';
+            var speed = 60;
+
+            window.onload = function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("info").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+        </script>
     </body>
 </html>
